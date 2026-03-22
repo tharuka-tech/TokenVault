@@ -30,7 +30,7 @@ ASP.NET Core Web API + React + SQL Server + Entity Framework Core
 | HTTP Client | Axios (frontend)                    | —         |
 | Styling     | (Tailwind / CSS Modules / etc.)     | —         |
 
-## 🚀 Quick Start (5–7 minutes)
+## 🚀 Quick Start
 
 ### 1. Clone the repository
 
@@ -47,6 +47,48 @@ cd TokenVault
   GO
 ```
 
+
+### 🔐 Database Setup (Production / IIS Permissions)
+
+```bash
+- Run the following SQL script to configure database access for IIS:
+
+-- 1️⃣ Create database
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'TokenVault')
+BEGIN
+    CREATE DATABASE TokenVault;
+END
+GO
+
+-- 2️⃣ Create login for IIS App Pool
+IF NOT EXISTS (SELECT * FROM sys.server_principals WHERE name = 'IIS APPPOOL\TokenVaultBackend')
+BEGIN
+    CREATE LOGIN [IIS APPPOOL\TokenVaultAppPool] FROM WINDOWS;
+END
+GO
+
+-- 3️⃣ Create database user and grant permissions
+USE TokenVault;
+GO
+
+IF NOT EXISTS (SELECT * FROM sys.database_principals WHERE name = 'IIS APPPOOL\TokenVaultBackend')
+BEGIN
+    CREATE USER [IIS APPPOOL\TokenVaultAppPool] FOR LOGIN [IIS APPPOOL\TokenVaultAppPool];
+END
+GO
+
+-- 4️⃣ Grant permissions
+GRANT SELECT, INSERT, UPDATE, DELETE ON SCHEMA::dbo TO [IIS APPPOOL\TokenVaultBackend];
+GO
+
+```
+*** ⚠️ Make sure your IIS Application Pool name is exactly: ***
+
+```bash
+bashTokenVaultBackend
+```
+
+
 ### 3. Configure appsettings.json
  - Update the connection string to match your SQL Server instance.
 ### 4. Apply EF Core Migrations
@@ -58,4 +100,47 @@ dotnet ef database update
 - The project includes a DataSeeder class.
 - Run the backend once via Visual Studio or IIS.
 - Initial data will be automatically inserted into the database tables.
+
+
+
+## IIS Hosting Instructions (Windows Server / Windows 10–11)
+
+### Prerequisites
+
+- Windows Server 2016+ / Windows 10/11
+- IIS installed with **ASP.NET Core Hosting Bundle** (very important!)
+  → Download: https://dotnet.microsoft.com/en-us/download/dotnet/8.0 (choose **Hosting Bundle**)
+- .NET 8 Runtime & Hosting Bundle installed on the server
+
+### Step 1 – Publish the Backend
+
+1. In Visual Studio
+   - Right-click the **backend project** → **Publish...**
+   - Choose **Folder** → Select an empty folder (e.g. `C:\publish\TokenVault\backend`)
+   - Click **Publish**
+
+2. Create IIS Site
+    - Open IIS Manager → Add Website
+    - Site name: TokenVaultBackend
+    - Physical path: folder where you published backend
+    - **Port: 7061**
+    - **Protocol: https**
+  
+### Step 2 – Publish the Frontend
+
+1. Build React App
+   - Go to the **fronrend project folder** → **Terminal**
+    ```bash
+      cd Frontend
+      npm install
+      npm run build
+    ```
+
+3. Create IIS Site
+    - Open IIS Manager → Add Website
+    - Site name: TokenVaultFrontend
+    - Physical path: path to Frontend/build folder
+    - **Port: 3000**
+    - **Protocol: http**
+ 
   
