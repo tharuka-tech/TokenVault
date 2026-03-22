@@ -48,7 +48,7 @@ cd TokenVault
 ```
 
 
-### 🔐 Database Setup (Production / IIS Permissions)
+### 3. Database Setup (Production / IIS Permissions)
 
 ```bash
 - Run the following SQL script to configure database access for IIS:
@@ -98,14 +98,14 @@ iisreset
 </hr>
 
 
-### 3. Configure appsettings.json
+### 4. Configure appsettings.json
  - Update the connection string to match your SQL Server instance.
-### 4. Apply EF Core Migrations
+### 5. Apply EF Core Migrations
 ```bash
 dotnet ef database update
 ```
 
-### 5. Seed Data
+### 6. Seed Data
 - The project includes a DataSeeder class.
 - Run the backend once via Visual Studio or IIS.
 - Initial data will be automatically inserted into the database tables.
