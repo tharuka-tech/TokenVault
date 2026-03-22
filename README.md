@@ -63,7 +63,7 @@ GO
 -- 2️⃣ Create login for IIS App Pool
 IF NOT EXISTS (SELECT * FROM sys.server_principals WHERE name = 'IIS APPPOOL\TokenVaultBackend')
 BEGIN
-    CREATE LOGIN [IIS APPPOOL\TokenVaultAppPool] FROM WINDOWS;
+    CREATE LOGIN [IIS APPPOOL\TokenVaultBackend] FROM WINDOWS;
 END
 GO
 
@@ -73,7 +73,7 @@ GO
 
 IF NOT EXISTS (SELECT * FROM sys.database_principals WHERE name = 'IIS APPPOOL\TokenVaultBackend')
 BEGIN
-    CREATE USER [IIS APPPOOL\TokenVaultAppPool] FOR LOGIN [IIS APPPOOL\TokenVaultAppPool];
+    CREATE USER [IIS APPPOOL\TokenVaultAppPool] FOR LOGIN [IIS APPPOOL\TokenVaultBackend];
 END
 GO
 
