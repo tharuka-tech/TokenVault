@@ -88,7 +88,7 @@ GO
  TokenVaultBackend
 ```
 
-### After granting permissions:
+**After granting permissions:**
 - Run this command in the PowerShell Admin Privillagess Using
 ```bash
 iisreset
