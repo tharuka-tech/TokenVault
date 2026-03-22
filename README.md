@@ -88,6 +88,11 @@ GO
 bashTokenVaultBackend
 ```
 
+### After granting permissions:
+- Run this command in the PowerShell Admin Privillagess Using
+```bash
+iisreset
+```
 
 ### 3. Configure appsettings.json
  - Update the connection string to match your SQL Server instance.
