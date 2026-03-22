@@ -82,10 +82,10 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON SCHEMA::dbo TO [IIS APPPOOL\TokenVaultBa
 GO
 
 ```
-*** ⚠️ Make sure your IIS Application Pool name is exactly: ***
+⚠️ **Make sure your backend IIS Application Pool name is exactly:**
 
 ```bash
-bashTokenVaultBackend
+ TokenVaultBackend
 ```
 
 ### After granting permissions:
