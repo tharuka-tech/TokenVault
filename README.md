@@ -35,5 +35,6 @@ ASP.NET Core Web API + React + SQL Server + Entity Framework Core
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/TokenVault.git
+git clone https://github.com/tharuka-tech/TokenVault.git
 cd TokenVault
+```
