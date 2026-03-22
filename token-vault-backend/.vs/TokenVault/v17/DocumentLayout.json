@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D7F303-3A29-4895-925B-E17A2970F675}|TokenVault\\TokenVault.csproj|c:\\users\\tharuka\\source\\repos\\tokenvault\\tokenvault\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F3D7F303-3A29-4895-925B-E17A2970F675}|TokenVault\\TokenVault.csproj|solutionrelative:tokenvault\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D7F303-3A29-4895-925B-E17A2970F675}|TokenVault\\TokenVault.csproj|c:\\users\\tharuka\\source\\repos\\tokenvault\\tokenvault\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3D7F303-3A29-4895-925B-E17A2970F675}|TokenVault\\TokenVault.csproj|solutionrelative:tokenvault\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Publish\\TokenVaultFrontend\\asset-manifest.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D7F303-3A29-4895-925B-E17A2970F675}|TokenVault\\TokenVault.csproj|c:\\users\\tharuka\\source\\repos\\tokenvault\\tokenvault\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3D7F303-3A29-4895-925B-E17A2970F675}|TokenVault\\TokenVault.csproj|solutionrelative:tokenvault\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D7F303-3A29-4895-925B-E17A2970F675}|TokenVault\\TokenVault.csproj|c:\\users\\tharuka\\source\\repos\\tokenvault\\tokenvault\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3D7F303-3A29-4895-925B-E17A2970F675}|TokenVault\\TokenVault.csproj|solutionrelative:tokenvault\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D7F303-3A29-4895-925B-E17A2970F675}|TokenVault\\TokenVault.csproj|c:\\users\\tharuka\\source\\repos\\tokenvault\\tokenvault\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3D7F303-3A29-4895-925B-E17A2970F675}|TokenVault\\TokenVault.csproj|solutionrelative:tokenvault\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D7F303-3A29-4895-925B-E17A2970F675}|TokenVault\\TokenVault.csproj|c:\\users\\tharuka\\source\\repos\\tokenvault\\tokenvault\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3D7F303-3A29-4895-925B-E17A2970F675}|TokenVault\\TokenVault.csproj|solutionrelative:tokenvault\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D7F303-3A29-4895-925B-E17A2970F675}|TokenVault\\TokenVault.csproj|c:\\users\\tharuka\\source\\repos\\tokenvault\\tokenvault\\models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3D7F303-3A29-4895-925B-E17A2970F675}|TokenVault\\TokenVault.csproj|solutionrelative:tokenvault\\models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D7F303-3A29-4895-925B-E17A2970F675}|TokenVault\\TokenVault.csproj|c:\\users\\tharuka\\source\\repos\\tokenvault\\tokenvault\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3D7F303-3A29-4895-925B-E17A2970F675}|TokenVault\\TokenVault.csproj|solutionrelative:tokenvault\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\TokenVault\\appsettings.json",
+              "RelativeDocumentMoniker": "TokenVault\\appsettings.json",
+              "ToolTip": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\TokenVault\\appsettings.json",
+              "RelativeToolTip": "TokenVault\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-21T09:48:02.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\TokenVault\\Data\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "TokenVault\\Data\\DataSeeder.cs",
+              "ToolTip": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\TokenVault\\Data\\DataSeeder.cs",
+              "RelativeToolTip": "TokenVault\\Data\\DataSeeder.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAqwDcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T09:24:16.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\TokenVault\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "TokenVault\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\TokenVault\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "TokenVault\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA4wBoAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T09:21:53.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Log.cs",
+              "DocumentMoniker": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\TokenVault\\Models\\Log.cs",
+              "RelativeDocumentMoniker": "TokenVault\\Models\\Log.cs",
+              "ToolTip": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\TokenVault\\Models\\Log.cs",
+              "RelativeToolTip": "TokenVault\\Models\\Log.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-21T04:48:21.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\TokenVault\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "TokenVault\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\TokenVault\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "TokenVault\\Controllers\\DashboardController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T19:30:13.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\TokenVault\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "TokenVault\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\TokenVault\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "TokenVault\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwHAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T19:27:57.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\TokenVault\\Program.cs",
+              "RelativeDocumentMoniker": "TokenVault\\Program.cs",
+              "ToolTip": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\TokenVault\\Program.cs",
+              "RelativeToolTip": "TokenVault\\Program.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAnwG0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T19:19:33.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "asset-manifest.json",
+              "DocumentMoniker": "C:\\Publish\\TokenVaultFrontend\\asset-manifest.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Publish\\TokenVaultFrontend\\asset-manifest.json",
+              "ToolTip": "C:\\Publish\\TokenVaultFrontend\\asset-manifest.json",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Publish\\TokenVaultFrontend\\asset-manifest.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-21T19:49:51.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\TokenVault\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "TokenVault\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\Tharuka\\source\\repos\\TokenVault\\TokenVault\\Services\\TokenService.cs",
+              "RelativeToolTip": "TokenVault\\Services\\TokenService.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwCwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-20T18:01:54.886Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
