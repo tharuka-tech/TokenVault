@@ -38,3 +38,24 @@ ASP.NET Core Web API + React + SQL Server + Entity Framework Core
 git clone https://github.com/tharuka-tech/TokenVault.git
 cd TokenVault
 ```
+### 2. Database Setup
+- Open SQL Server Management Studio (SSMS)
+- Run the following query to create the database:
+
+```bash
+  CREATE DATABASE TokenVault;
+  GO
+```
+
+### 3. Configure appsettings.json
+ - Update the connection string to match your SQL Server instance.
+### 4. Apply EF Core Migrations
+```bash
+dotnet ef database update
+```
+
+### 5. Seed Data
+- The project includes a DataSeeder class.
+- Run the backend once via Visual Studio or IIS.
+- Initial data will be automatically inserted into the database tables.
+  
