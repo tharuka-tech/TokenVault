@@ -94,6 +94,10 @@ bashTokenVaultBackend
 iisreset
 ```
 
+
+</hr>
+
+
 ### 3. Configure appsettings.json
  - Update the connection string to match your SQL Server instance.
 ### 4. Apply EF Core Migrations
