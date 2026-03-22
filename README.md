@@ -17,7 +17,7 @@ ASP.NET Core Web API + React + SQL Server + Entity Framework Core
 - React frontend with clean UI
 - Automatic database migrations
 - One-time initial data seeding
-- CORS & HTTPS configured for local development(**Frontend:"(http://localhost:3000)" , BackEnd:"(`https://localhost:7061`)"**)
+- CORS & HTTPS configured for local development(**Frontend:"(http://localhost:3000)" , BackEnd:"(https://localhost:7061)"**)
 
 ## 🛠 Tech Stack
 
