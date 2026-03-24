@@ -67,18 +67,21 @@ BEGIN
 END
 GO
 
--- 3️⃣ Create database user and grant permissions
+-- 3️⃣ Create database user
 USE TokenVault;
 GO
 
 IF NOT EXISTS (SELECT * FROM sys.database_principals WHERE name = 'IIS APPPOOL\TokenVaultBackend')
 BEGIN
-    CREATE USER [IIS APPPOOL\TokenVaultAppPool] FOR LOGIN [IIS APPPOOL\TokenVaultBackend];
+    CREATE USER [IIS APPPOOL\TokenVaultBackend] 
+    FOR LOGIN [IIS APPPOOL\TokenVaultBackend];
 END
 GO
 
 -- 4️⃣ Grant permissions
-GRANT SELECT, INSERT, UPDATE, DELETE ON SCHEMA::dbo TO [IIS APPPOOL\TokenVaultBackend];
+GRANT SELECT, INSERT, UPDATE, DELETE 
+ON SCHEMA::dbo 
+TO [IIS APPPOOL\TokenVaultBackend];
 GO
 
 ```
