@@ -102,7 +102,11 @@ iisreset
  - Update the connection string to match your SQL Server instance.
 ### 5. Apply EF Core Migrations
 ```bash
+//Terminal
 dotnet ef database update
+
+//Package Manager Console
+dotnet ef database update --project TokenVault
 ```
 
 ### 6. Seed Data
