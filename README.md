@@ -48,62 +48,14 @@ cd TokenVault
 ```
 
 
-### 3. Database Setup (Production / IIS Permissions)
-
-```bash
-- Run the following SQL script to configure database access for IIS:
-
--- 1️⃣ Create database
-IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'TokenVault')
-BEGIN
-    CREATE DATABASE TokenVault;
-END
-GO
-
--- 2️⃣ Create login for IIS App Pool
-IF NOT EXISTS (SELECT * FROM sys.server_principals WHERE name = 'IIS APPPOOL\TokenVaultBackend')
-BEGIN
-    CREATE LOGIN [IIS APPPOOL\TokenVaultBackend] FROM WINDOWS;
-END
-GO
-
--- 3️⃣ Create database user
-USE TokenVault;
-GO
-
-IF NOT EXISTS (SELECT * FROM sys.database_principals WHERE name = 'IIS APPPOOL\TokenVaultBackend')
-BEGIN
-    CREATE USER [IIS APPPOOL\TokenVaultBackend] 
-    FOR LOGIN [IIS APPPOOL\TokenVaultBackend];
-END
-GO
-
--- 4️⃣ Grant permissions
-GRANT SELECT, INSERT, UPDATE, DELETE 
-ON SCHEMA::dbo 
-TO [IIS APPPOOL\TokenVaultBackend];
-GO
-
-```
-⚠️ **Make sure your backend IIS Application Pool name is exactly:**
-
-```bash
- TokenVaultBackend
-```
-
-**After granting permissions:**
-- Run this command in the PowerShell Admin Privillagess Using
-```bash
-iisreset
-```
 
 
 </hr>
 
 
-### 4. Configure appsettings.json
+### 3. Configure appsettings.json
  - Update the connection string to match your SQL Server instance.
-### 5. Apply EF Core Migrations
+### 4. Apply EF Core Migrations
 ```bash
 //Terminal
 dotnet ef database update
@@ -158,5 +110,55 @@ dotnet ef database update --project TokenVault
     - Physical path: path to Frontend/build folder
     - **Port: 3000**
     - **Protocol: http**
+  
+  ###  Database Setup (Production / IIS Permissions)
+
+```bash
+- Run the following SQL script to configure database access for IIS:
+
+-- 1️⃣ Create database
+IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'TokenVault')
+BEGIN
+    CREATE DATABASE TokenVault;
+END
+GO
+
+-- 2️⃣ Create login for IIS App Pool
+IF NOT EXISTS (SELECT * FROM sys.server_principals WHERE name = 'IIS APPPOOL\TokenVaultBackend')
+BEGIN
+    CREATE LOGIN [IIS APPPOOL\TokenVaultBackend] FROM WINDOWS;
+END
+GO
+
+-- 3️⃣ Create database user
+USE TokenVault;
+GO
+
+IF NOT EXISTS (SELECT * FROM sys.database_principals WHERE name = 'IIS APPPOOL\TokenVaultBackend')
+BEGIN
+    CREATE USER [IIS APPPOOL\TokenVaultBackend] 
+    FOR LOGIN [IIS APPPOOL\TokenVaultBackend];
+END
+GO
+
+-- 4️⃣ Grant permissions
+GRANT SELECT, INSERT, UPDATE, DELETE 
+ON SCHEMA::dbo 
+TO [IIS APPPOOL\TokenVaultBackend];
+GO
+
+```
+⚠️ **Make sure your backend IIS Application Pool name is exactly:**
+
+```bash
+ TokenVaultBackend
+```
+
+**After granting permissions:**
+- Run this command in the PowerShell Admin Privillagess Using
+```bash
+iisreset
+```
+
  
   
